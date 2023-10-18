@@ -1,0 +1,466 @@
+* {
+    --primary-color: rgb(255, 196, 0);
+    --text-color: rgba(255, 255, 255, 0.945);
+    --bg-color: rgba(36, 37, 56, 0.925);
+    --button-color: rgb(15, 155, 15);
+    --second-bg-color: rgba(32, 33, 49, 0.925);
+
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+section {
+
+    width: 100%;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 2.6rem;
+
+}
+
+/* BUTTONS */
+
+.buttons-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.buttons-container a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    width: 120px;
+    height: 50px;
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 12px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.buttons-container a:hover {
+    background-color: rgb(4, 185, 4);
+}
+
+
+
+
+
+
+
+/* HEADER TITLE */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 2rem;
+    position: relative;
+}
+
+header h2 {
+
+    color: var(--primary-color);
+    font-size: 1.6rem;
+
+}
+
+header #flag {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+header #flag .flag-color {
+    height: 10px;
+    width: 105px;
+}
+
+header #flag .flag-color:first-child {
+    background-color: green;
+}
+
+header #flag .flag-color:nth-child(2) {
+    background-color: white;
+
+}
+
+header #flag .flag-color:nth-child(3) {
+
+    background-color: red;
+
+}
+
+
+/* NAVBAR */
+
+nav {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    align-items: center;
+
+}
+
+nav p {
+
+    text-align: center;
+    margin-bottom: 14px;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+}
+
+/* HERO SECTION */
+
+#heroSection {
+    height: 70vh;
+    display: flex;
+
+}
+
+#heroSection .image {
+    background: url(assets/hero/hero-pizza.jpg) no-repeat center center;
+    background-size: cover;
+    height: 90%;
+    width: 70%;
+    border-radius: 0px 30px 30px 0px;
+}
+
+#heroSection .text {
+
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    width: 40%;
+}
+
+#heroSection .text h2 {
+    margin: 20px auto 10px auto;
+}
+
+#heroSection .text h3 {
+    margin: 0px auto;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#heroSection .text p {
+
+    margin: 35px 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+#heroSection .text p span {
+
+    color: var(--primary-color);
+
+}
+
+
+
+/* ABOUT SECTION */
+
+#aboutSection #about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    background: var(--second-bg-color);
+    height: 100%;
+}
+
+.about-text {
+    width: 50%;
+
+    margin: 70px 80px;
+}
+
+.about-text h2 {
+
+    margin: 0px 0px 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.about-text p {
+    margin: 50px 70px;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+
+
+.about-images {
+    width: 50%;
+    margin: 0px 80px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    max-width: 680px;
+    gap: 30px;
+    align-content: center;
+}
+
+.about-images img:nth-child(1) {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    height: 330px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.about-images img:nth-child(2) {
+    height: 330px;
+    width: 250px;
+
+    grid-column: 2 / 3;
+    left: 200px;
+    grid-row: 3/ 6;
+    border-radius: 10px;
+}
+
+.about-images img:nth-child(3) {
+    height: 330px;
+    grid-column: 1 / 2;
+    width: 250px;
+    grid-row: 5/ 8;
+    border-radius: 10px;
+}
+
+/* BACK TO HERO BUTTON */
+
+.buttonHome-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-row: 7/ 8;
+    grid-column: 2;
+    margin-bottom: 30px;
+}
+
+.buttonHome-container a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    width: 60px;
+    height: 58px;
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.buttonHome-container a:hover {
+
+    background-color: rgb(4, 185, 4);
+
+}
+
+
+
+/* PIZZAS SECTION */
+
+#pizzaSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#pizzaSection h2 {
+
+
+    text-align: center;
+    margin: 40px auto;
+
+}
+
+#pizzaSection .allPizzasContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pizzaSection .allPizzasContainer .pizzaContainer {
+
+    height: 670px;
+    width: 390px;
+    border-radius: 20px;
+    background-color: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+#pizzaSection .allPizzasContainer .pizzaContainer .pizzasImg {
+    background-size: cover;
+    background-position: center center;
+    height: 310px;
+    width: 330px;
+    border-radius: 20px;
+
+    margin: 25px auto 20px;
+}
+
+#pizzaSection .allPizzasContainer .pizzaContainer:nth-child(1) .pizzasImg {
+
+    background-image: url(./assets/pizzas/pizza1.jpg);
+
+
+}
+
+#pizzaSection .allPizzasContainer .pizzaContainer:nth-child(2) .pizzasImg {
+
+    background-image: url(./assets/pizzas/pizza2.jpg);
+
+
+}
+
+#pizzaSection .allPizzasContainer .pizzaContainer:nth-child(3) .pizzasImg {
+
+    background-image: url(./assets/pizzas/pizza3.jpg);
+
+
+}
+
+
+#pizzaSection .allPizzasContainer .pizzaContainer h3 {
+    font-size: 1.6rem;
+    margin: 10px 10px 20px 10px;
+    text-align: center;
+}
+
+
+#pizzaSection .allPizzasContainer .pizzaContainer .pizzaDescription {
+
+    height: 120px;
+    text-align: center;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+
+}
+
+#pizzaSection .allPizzasContainer .pizzaContainer p {
+    margin: 10px 20px;
+}
+
+
+#pizzaSection .allPizzasContainer .pizzaContainer .buttons-container {
+
+    margin: 10px;
+
+}
+
+#pizzaSection .allPizzasContainer .pizzaContainer .buttons-container a {
+
+    width: 250px;
+}
+
+#pizzaSection .buttonHome-container {
+
+    margin: auto auto;
+
+}
+
+
+/* DELIVERY SECTION */
+
+#deliverySection {
+
+    background-color: var(--bg-color);
+}
+
+#deliverySection .deliveryContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+
+}
+
+#deliverySection .deliveryContainer img {
+    margin: auto 30px;
+
+    height: 90%;
+
+}
+
+#deliverySection .deliveryContainer .deliveryTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 120px 100px 50px;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+
+}
+
+#deliverySection .deliveryContainer .deliveryTextContainer h2 {
+    margin-bottom: 60px;
+}
+
+#deliverySection .deliveryContainer .deliveryTextContainer p {
+    margin-bottom: 80px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+#deliverySection .deliveryContainer .deliveryTextContainer ul {
+    margin-bottom: 80px;
+    margin-left: 25px;
+    font-size: 1.4rem;
+    text-align: start;
+    align-self: flex-start;
+    line-height: 2;
+    color: var(--primary-color);
+
+}
+
+#deliverySection .deliveryContainer .deliveryTextContainer #homeButtonDelivery {
+    display: flex;
+    margin: auto 0px 0px auto;
+
+}
