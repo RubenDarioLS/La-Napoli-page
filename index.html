@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons.com Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +16,7 @@
         rel="stylesheet">
     <!-- Css -->
     <link rel="stylesheet" href="styles.css">
-    <title>Pizzeria</title>
+    <title>Pizzeria LA NAPOLI</title>
 </head>
 
 <body id="body">
@@ -21,7 +24,7 @@
     <header>
         <h1>LA NAPOLI</h1>
         <h2>Italian Pizza</h2>
-        <div id="flag">
+        <div class="flag">
             <span class="flag-color"></span>
             <span class="flag-color"></span>
             <span class="flag-color"></span>
@@ -67,8 +70,8 @@
                     Reserve your table now!
                 </p>
                 <div class="buttons-container">
-                    <a href="">Reserve</a>
-                    <a href="">Our Pizzas</a>
+                    <a href="#contactSection">Reserve</a>
+                    <a href="#pizzaSection">Our Pizzas</a>
                 </div>
             </div>
 
@@ -101,12 +104,7 @@
 
                         Our team of chefs and service staff is dedicated to keeping the tradition of La Napoli alive and
                         making
-                        every visit an unforgettable experience. Whether you're celebrating a special occasion or simply
-                        enjoying a family dinner, we're here to make your experience exceptional. <br><br>
-
-                        Over the years, we've witnessed countless smiles and shared moments around our table, and we
-                        look
-                        forward to creating many more in the future. <br><br>
+                        every visit an unforgettable experience.<br><br>
 
                         Thank you for being a part of our history and for choosing La Napoli. We invite you to join us
                         on
@@ -154,7 +152,7 @@
                     <p>Price: $15</p>
 
                     <div class="buttons-container">
-                        <a href="#">Place an Order</a>
+                        <a href="#contactSection">Place an Order</a>
                     </div>
 
 
@@ -174,7 +172,7 @@
 
 
                     <div class="buttons-container">
-                        <a href="#">Place an Order</a>
+                        <a href="#contactSection">Place an Order</a>
                     </div>
 
                 </div>
@@ -182,7 +180,7 @@
                 <div class="pizzaContainer">
 
                     <div class="pizzasImg"></div>
-                    <h3>Cherry Tomato and Basil Pizza</h3>
+                    <h3>Cherry Tomato Pizza</h3>
 
                     <div class="pizzaDescription">
 
@@ -193,7 +191,7 @@
 
 
                     <div class="buttons-container">
-                        <a href="#">Place an Order</a>
+                        <a href="#contactSection">Place an Order</a>
                     </div>
 
                 </div>
@@ -221,14 +219,14 @@
                         your favorite pizzas to you. An exceptional pizza at home is just a message away!</p>
 
                     <ul>
-                        <li>24-Hour Delivery</li>
+                        <li>24 - Hour Delivery</li>
                         <li>We Arrive in Under 40 Minutes</li>
                         <li>Delivery Anywhere in the City</li>
                     </ul>
 
 
                     <div class="buttons-container">
-                        <a href="#body">Order Delivery.</a>
+                        <a href="#contactSection">Order Delivery.</a>
                     </div>
                     <div id="homeButtonDelivery" class="buttonHome-container">
                         <a href="#body">⬆</a>
@@ -243,11 +241,42 @@
 
         <section id="contactSection">
 
+            <div class="logoContactContainer">
+
+                <h2>LA NAPOLI</h2>
+                <h3>Italian Pizza</h3>
+                <div class="flag">
+                    <span class="flag-color"></span>
+                    <span class="flag-color"></span>
+                    <span class="flag-color"></span>
+                </div>
+                <h4>Contact</h4>
+            </div>
+
+            <div class="socialContainer">
+
+                <div class="socialLink"><a href="https://www.tiktok.com" target="_blank"><i
+                            class='bx bxl-tiktok'></i></a></div>
+                <div class="socialLink"><a href="https://www.instagram.com" target="_blank"><i
+                            class='bx bxl-instagram'></i></a></div>
+                <div class="socialLink"><a href="https://www.whatsapp.com" target="_blank"><i
+                            class='bx bxl-whatsapp'></i></a></div>
+                <div class="socialLink"><a href="https://www.google.com/maps" target="_blank"><i
+                            class='bx bxs-map'></i></a>
+                </div>
+                <div class="socialLink"><a href="https://www.facebook.com" target="_blank"><i
+                            class='bx bxl-facebook'></i></a></div>
+
+            </div>
+
+            <div class="buttonHome-container">
+                <a href="#body">⬆</a>
+            </div>
         </section>
 
     </main>
     <footer>
-
+        <p> &copy; 2023 LA NAPOLI. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
